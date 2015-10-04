@@ -13,6 +13,17 @@ to know where to start. Then this collection is also for you.
 * [CSS questions](https://github.com/artemdemo/frontend-interview-questions/blob/master/css-questions.md)
 * [JS questions](https://github.com/artemdemo/frontend-interview-questions/blob/master/js-questions.md)
 
+
+## Why I created this list?
+
+Well, cause I don't like boring questions on the interview.
+Seriously, it looks like some employers just opened google, wrote "Javascript interview question"
+and something similar for CSS and just take random question from there.
+Since I'm considering myself as a professional, I don't like when my interviewer is not doing the same.
+There are a lot of questions that can help to evaluate level of the developer.
+It will be great if companies will start to think more about it.
+
+
 ## Disclaimer
 
 Keep in mind that it is not effective to ask random questions,
