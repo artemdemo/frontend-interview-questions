@@ -1,6 +1,60 @@
 # CSS questions
 
-# Pseudo classes
+**Q.** You have two `<div>` elements side by side in the row.
+
+```html
+<div class="row">
+    <div class="item"></div>
+    <div class="item"></div>
+</div>
+```
+
+The right one has fixed width of 200px, the left one should take all the rest.
+
+**A.** There is two options.
+
+The first one:
+
+```css
+    .row {
+        position: relative;
+    }
+    .left {
+        margin-right: 200px;
+        background-color: blue;
+        height: 50px;
+    }
+    .right {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 200px;
+        background-color: red;
+    }
+```
+
+The second:
+
+```css
+    .row {
+        display: table;
+        width:100%;
+    }
+    .left {
+        display: table-cell;
+        background-color: blue;
+        height: 50px;
+    }
+    .right {
+        display: table-cell;
+        width: 200px;
+        background-color: red;
+    }
+```
+[Example of 2 divs side by side](http://codepen.io/artemdemo/pen/vNxvYx)
+
+## Pseudo classes
 
 **Q.** You have the following html code:
 
@@ -14,7 +68,7 @@
 </div>
 ```
 
-Please describe what you will see on the screen after applying following style
+Describe what you will see on the screen after applying following style
 
 ```css
     .item {
