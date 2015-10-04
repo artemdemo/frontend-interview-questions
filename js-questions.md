@@ -60,4 +60,4 @@ Write function `isNumber()` that will return `true` if it is in fact number or `
 ```
 
 **Explanation** `Number()` of something that can't be converted to number will return `NaN`
-and by specification of ECMAScript `NaN` no equal to `NaN`
+and by specification of ECMAScript `NaN` not equal to `NaN`
