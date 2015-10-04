@@ -12,3 +12,11 @@ to know where to start. Then this collection is also for you.
 
 * [CSS questions](https://github.com/artemdemo/frontend-interview-questions/blob/master/css-questions.md)
 * [JS questions](https://github.com/artemdemo/frontend-interview-questions/blob/master/js-questions.md)
+
+## Disclaimer
+
+Keep in mind that it is not effective to ask random questions,
+even if there are related to the tools your applicant will use.
+You need to ask questions that related to **your** *code* and **your** *business needs*.
+Otherwise you will hire some random guy with random skills. 
+My aim here is only to give you some examples of good interview questions *in general*.
