@@ -45,3 +45,19 @@ or
 ```javascript
     foo = Number('20') + 10;
 ```
+
+---
+
+**Q.** You have variable that may or may not be a number.
+Write function `isNumber()` that will return `true` if it is in fact number or `false` otherwise.
+
+**A.**
+
+```javascript
+    function isNumber(str) {
+        return Number(str) == Number(str);
+    }
+```
+
+**Explanation** `Number()` of something that can't be converted to number will return `NaN`
+and by specification of ECMAScript `NaN` no equal to `NaN`
