@@ -138,5 +138,5 @@ Without adding new classes change color of elements, when there are exactly five
 **Explanation** `:nth-last-child` is counting backwards, therefore the code 
 `.item:nth-child(1):nth-last-child(5)` is saying: find elements that have class `.item` are first among siblings and fifth from the end
 
-[Example of .item:nth-child(1):nth-last-child(5](http://codepen.io/artemdemo/pen/BoWGeJ)
+[Example of .item:nth-child(1):nth-last-child(5)](http://codepen.io/artemdemo/pen/BoWGeJ)
 

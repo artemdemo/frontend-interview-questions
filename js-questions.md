@@ -1,5 +1,7 @@
 # JavaScript questions
 
+## Operators
+
 **Q.** What will be value of `y`?
 
 ```javascript
@@ -14,7 +16,9 @@
 **Explanation** First will be calculated `x++`, it will return `1` and after the value of `x` will be increased by `1`.
 Therefore at the end we will have `1 + 2`
 
----
+
+## Types
+
 
 **Q.** You have following code:
 
