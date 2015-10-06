@@ -140,3 +140,61 @@ Without adding new classes change color of elements, when there are exactly five
 
 [Example of .item:nth-child(1):nth-last-child(5)](http://codepen.io/artemdemo/pen/BoWGeJ)
 
+
+## Aligning elements
+
+**Q.** You have following html code. Please align text horizontally in the center and vertically in the middle.
+You have also `item-base` style, that shouldn't be changed.
+
+```html
+<div class="item-base item">
+    Some awesome text
+</div>
+```
+
+```css
+    .item-base {
+        width: 100%;
+        height: 100px;
+    }
+```
+
+**A.** There is more than one option
+
+In the question we see only one line, therefore one of solutions can be the following one:
+
+```css
+    .item {
+        text-align: center;
+        line-height: 100px;
+    }
+```
+
+It's sort of ok, but it has problems, it's like to write:
+
+```css
+    .item {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        text-align: center;
+        padding: 40px;
+    }
+```
+
+Both of this solutions have it's own problems
+
+More creative way of thinking:
+
+```css
+    body {
+        display: table;
+        width: 100%;
+    }
+    
+    .item {
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+    }
+```
