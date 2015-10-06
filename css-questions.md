@@ -16,45 +16,47 @@ The right one has fixed width of 200px, the left one should take all the rest.
 The first one:
 
 ```css
-    .row {
-        position: relative;
-    }
-    .left {
-        margin-right: 200px;
-        background-color: blue;
-        height: 50px;
-    }
-    .right {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        width: 200px;
-        background-color: red;
-    }
+.row {
+    position: relative;
+}
+.left {
+    margin-right: 200px;
+    background-color: blue;
+    height: 50px;
+}
+.right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    background-color: red;
+}
 ```
 
 The second:
 
 ```css
-    .row {
-        display: table;
-        width:100%;
-    }
-    .left {
-        display: table-cell;
-        background-color: blue;
-        height: 50px;
-    }
-    .right {
-        display: table-cell;
-        width: 200px;
-        background-color: red;
-    }
+.row {
+    display: table;
+    width:100%;
+}
+.left {
+    display: table-cell;
+    background-color: blue;
+    height: 50px;
+}
+.right {
+    display: table-cell;
+    width: 200px;
+    background-color: red;
+}
 ```
 [Example of 2 divs side by side](http://codepen.io/artemdemo/pen/vNxvYx)
 
+
 ## Pseudo classes
+
 
 **Q.** You have the following html code:
 
@@ -71,16 +73,16 @@ The second:
 Describe what you will see on the screen after applying following style
 
 ```css
-    .item {
-        display: inline-block;
-        width: 40px;
-        height: 40px;
-        margin-right: 10px;
-        background-color: blue;
-    }
-    .item:last-of-type {
-        background-color: red;
-    }
+.item {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background-color: blue;
+}
+.item:last-of-type {
+    background-color: red;
+}
 ```
 
 **A.** Four blue squares in the line.
@@ -117,22 +119,22 @@ Without adding new classes change color of elements, when there are exactly five
 ```
 
 ```css
-    .item {
-        display: inline-block;
-        width: 40px;
-        height: 40px;
-        margin-right: 10px;
-        background-color: blue;
-    }
+.item {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background-color: blue;
+}
 ```
 
 **A.** You need to use combination of `:nth-child` and `:nth-last-child`
 
 ```css
-    .item:nth-child(1):nth-last-child(5),
-    .item:nth-child(1):nth-last-child(5) ~ .item {
-        background-color: red;
-    }
+.item:nth-child(1):nth-last-child(5),
+.item:nth-child(1):nth-last-child(5) ~ .item {
+    background-color: red;
+}
 ```
 
 **Explanation** `:nth-last-child` is counting backwards, therefore the code 
@@ -153,10 +155,10 @@ You have also `item-base` style, that shouldn't be changed.
 ```
 
 ```css
-    .item-base {
-        width: 100%;
-        height: 100px;
-    }
+.item-base {
+    width: 100%;
+    height: 100px;
+}
 ```
 
 **A.** There is more than one option
@@ -164,22 +166,22 @@ You have also `item-base` style, that shouldn't be changed.
 In the question we see only one line, therefore one of solutions can be the following one:
 
 ```css
-    .item {
-        text-align: center;
-        line-height: 100px;
-    }
+.item {
+    text-align: center;
+    line-height: 100px;
+}
 ```
 
 It's sort of ok, but it has problems, it's like to write:
 
 ```css
-    .item {
-        box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        text-align: center;
-        padding: 40px;
-    }
+.item {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    text-align: center;
+    padding: 40px;
+}
 ```
 
 Both of this solutions have it's own problems
@@ -187,14 +189,14 @@ Both of this solutions have it's own problems
 More creative way of thinking:
 
 ```css
-    body {
-        display: table;
-        width: 100%;
-    }
-    
-    .item {
-        text-align: center;
-        display: table-cell;
-        vertical-align: middle;
-    }
+body {
+    display: table;
+    width: 100%;
+}
+
+.item {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
 ```

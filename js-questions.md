@@ -5,10 +5,10 @@
 **Q.** What will be value of `y`?
 
 ```javascript
-    var y,
-        x = 1;
-        
-    y = x+++x;
+var y,
+    x = 1;
+    
+y = x+++x;
 ```
 
 **A.** `y = 3`
@@ -23,9 +23,9 @@ Therefore at the end we will have `1 + 2`
 **Q.** You have following code:
 
 ```javascript
-    var foo;
-        
-    foo = '20' + 10;
+var foo;
+    
+foo = '20' + 10;
 ```
 
 What will be value of `foo` and what you suggest to do to improve this code?
@@ -35,19 +35,19 @@ What will be value of `foo` and what you suggest to do to improve this code?
 There is 3 ways to improve it:
 
 ```javascript
-    foo = +'20' + 10;
+foo = +'20' + 10;
 ```
 
 or
 
 ```javascript
-    foo = parseInt('20') + 10;
+foo = parseInt('20') + 10;
 ```
 
 or
 
 ```javascript
-    foo = Number('20') + 10;
+foo = Number('20') + 10;
 ```
 
 ---
@@ -58,9 +58,9 @@ Write function `isNumber()` that will return `true` if it is in fact number or `
 **A.**
 
 ```javascript
-    function isNumber(str) {
-        return Number(str) == Number(str);
-    }
+function isNumber(str) {
+    return Number(str) == Number(str);
+}
 ```
 
 **Explanation** `Number()` of something that can't be converted to number will return `NaN`
