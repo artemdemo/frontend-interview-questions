@@ -65,3 +65,31 @@ function isNumber(str) {
 
 **Explanation** `Number()` of something that can't be converted to number will return `NaN`
 and by specification of ECMAScript `NaN` not equal to `NaN`
+
+
+## Reference/alias
+
+
+**Q.** What output you will see in the console?
+
+```javascript
+var obj = {
+    foo: []
+}
+var boo = obj.foo;
+
+boo.push('Hi there!');
+
+console.log(obj);
+```
+
+**A.**
+
+```javascript
+{
+    foo: ['Hi there!']
+}
+```
+
+**Explanation** `boo` will contain reference to the `obj.foo` and not value of it.
+There for by pushing to the `boo` you'll actually push to `obj.foo`
