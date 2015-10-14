@@ -80,6 +80,8 @@ var boo = obj.foo;
 
 boo.push('Hi there!');
 
+obj.foo = obj.foo.concat(boo)
+
 console.log(obj);
 ```
 
@@ -87,9 +89,12 @@ console.log(obj);
 
 ```javascript
 {
-    foo: ['Hi there!']
+    foo: [
+        'Hi there!',
+        'Hi there!'
+    ]
 }
 ```
 
-**Explanation** `boo` will contain reference to the `obj.foo` and not value of it.
-There for by pushing to the `boo` you'll actually push to `obj.foo`
+**Explanation** `boo` will contain reference to the `obj.foo` and not the value of it.
+Therefore by pushing to the `boo` you'll actually push to `obj.foo`
