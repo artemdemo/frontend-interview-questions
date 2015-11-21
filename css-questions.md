@@ -200,3 +200,36 @@ body {
     vertical-align: middle;
 }
 ```
+
+---
+
+
+**Q.** You have following html code. Please align *element* `item-inner` horizontally in the center
+and vertically in the middle.
+You have also `item-base` style, that shouldn't be changed.
+
+```html
+<div class="item-base item">
+    <div class="item-inner">Some awesome text</div>
+</div>
+```
+
+```css
+.item-base {
+    width: 100%;
+    height: 100px;
+}
+```
+
+**A.**
+
+
+---
+
+**Q.** You need to add footer stocked to the bottom of the page.
+It should work also in mobile. What is your solution and what problems you may face.
+
+**A.** There is no problems nowadays. You can simple use `position: fixed`. 
+The only problem can appear if you're aiming really old smartphones: Android 2.1 and below or iOS 4 and below.
+For this devices you will need to use JS plugins like [iScroll](https://github.com/cubiq/iscroll),
+case they not support position: fixed and footer will scroll along with the page.
