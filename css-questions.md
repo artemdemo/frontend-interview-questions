@@ -222,9 +222,24 @@ You have also `item-base` style, that shouldn't be changed.
 ```
 
 **A.**
-
+```css
+body {
+    width: 100%;
+    margin: 0;
+    display: table;
+}
+.item-base {
+    display: table-cell;
+    vertical-align: middle;
+}
+.item-inner {
+    text-align: center;
+}
+```
+[In the middle - horizontally and verticall](http://codepen.io/artemdemo/pen/wKZEqY)
 
 ---
+
 
 **Q.** You need to add footer stocked to the bottom of the page.
 It should work also in mobile. What is your solution and what problems you may face.
