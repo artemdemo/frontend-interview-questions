@@ -13,6 +13,7 @@ to know where to start. Then this collection is also for you.
 * [CSS questions](https://github.com/artemdemo/frontend-interview-questions/blob/master/css-questions.md)
 * [JS questions](https://github.com/artemdemo/frontend-interview-questions/blob/master/js-questions.md)
 * [ES2015 questions](https://github.com/artemdemo/frontend-interview-questions/blob/master/es2015-questions.md)
+* [HTML questions](https://github.com/artemdemo/frontend-interview-questions/blob/master/html-questions.md)
 
 
 ## Why I created this list?

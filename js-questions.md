@@ -96,6 +96,17 @@ and by specification of ECMAScript `NaN` not equal to `NaN`
 
 **A.**
 
+```javascript
+5 - "4"    // number 1
+5 + "4"    // string "54"
+5 + null   // number 5
+!{}[true]  // boolean true
++[1]       // number 1
++[1, 2]    // NaN
+7 - "a"    // NaN
+7 / 0      // Infinity
+```
+
 ---
 
 **Q.** What will be result ofeach of following exprassions? Explain why their are differ:
@@ -107,6 +118,12 @@ null == false
 ```
 
 **A.**
+
+```javascript
+0 == false      // true
+0 == null       // false
+null == false   // false
+```
 
 
 ## Reference/alias
