@@ -32,6 +32,8 @@ null
 undefined
 ```
 
+---
+
 **Q.** In the following code - what will be value of `foo` and what you suggest to do to improve this code?
 
 
@@ -152,6 +154,7 @@ Therefore by pushing to the `boo` you'll actually push to `obj.foo`
 **A.**
 It's immediately-invoked function expression (IIFE). JavaScript will execute whatever will be in this function as soon as it gets here. Code inside of thies funcion will have its own scope.
 
+---
 
 **Q.** Write code, that will provide following behaviour:
 
@@ -168,8 +171,6 @@ function (a) {
     }
 }
 ```
-
-
 
 
 ## URL, data
@@ -189,11 +190,29 @@ console.log(link.protocol+'//'+link.host+link.pathname+link.search+link.hash)
 **Q.** You have cross domain error for your script, how you will load it.
 
 **A.**
+We can use JSONP as a solution (see next question).
 
 ---
 
 **Q.** What is JSONP? How and when you will use it?
 
 **A.**
+JSONP, which stands for "JSON with Padding" (and JSON stands for JavaScript Object Notation), is a way to get data from another domain that bypasses CORS (Cross Origin Resource Sharing) rules.
 
+Say you're on domain example.com, and you want to make a request to domain example.net. To do so, you need to cross domain boundaries, a no-no in most of browserland. We can bypasses this limitation by using `<script>` tags.
 
+We can use following link witk callback in order to process data:
+
+```javascript
+script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = 'http://www.example.net/sample.php?callback=mycallback';
+```
+
+Then we can add global function `mycallback`, that will get data from the server.
+
+```javascript
+mycallback = function(callbackData){
+  console.log(callbackData);
+};
+```
