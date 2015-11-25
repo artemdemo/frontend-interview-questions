@@ -1,5 +1,13 @@
 # JavaScript questions
 
+* [Operators](https://github.com/artemdemo/frontend-interview-questions/blob/master/js-questions.md#operators)
+* [Types](https://github.com/artemdemo/frontend-interview-questions/blob/master/js-questions.md#types)
+* [Reference/alias](https://github.com/artemdemo/frontend-interview-questions/blob/master/js-questions.md#referencealias)
+* [Functions](https://github.com/artemdemo/frontend-interview-questions/blob/master/js-questions.md#functions)
+* [URL, data](https://github.com/artemdemo/frontend-interview-questions/blob/master/js-questions.md#url-data)
+
+---
+
 ## Operators
 
 **Q.** What will be value of `y`?

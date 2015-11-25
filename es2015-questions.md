@@ -1,5 +1,12 @@
 # ES2015 (ES6) questions
 
+* [var / let / const](https://github.com/artemdemo/frontend-interview-questions/blob/master/es2015-questions.md#var--let--const)
+* [Templates](https://github.com/artemdemo/frontend-interview-questions/blob/master/es2015-questions.md#templates)
+* [Declare](https://github.com/artemdemo/frontend-interview-questions/blob/master/es2015-questions.md#declare)
+* [Is it legal or not](https://github.com/artemdemo/frontend-interview-questions/blob/master/es2015-questions.md#is-it-legal-or-not)
+
+---
+
 ## var / let / const
 
 **Q.** What's the output?

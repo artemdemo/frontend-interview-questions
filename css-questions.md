@@ -1,62 +1,11 @@
 # CSS questions
 
-**Q.** You have two `<div>` elements side by side in the row.
+* [Pseudo classes](https://github.com/artemdemo/frontend-interview-questions/blob/master/css-questions.md#pseudo-classes)
+* [Aligning elements](https://github.com/artemdemo/frontend-interview-questions/blob/master/css-questions.md#aligning-elements)
 
-```html
-<div class="row">
-    <div class="item"></div>
-    <div class="item"></div>
-</div>
-```
-
-The right one has fixed width of 200px, the left one should take all the rest.
-
-**A.** There is two options.
-
-The first one:
-
-```css
-.row {
-    position: relative;
-}
-.left {
-    margin-right: 200px;
-    background-color: blue;
-    height: 50px;
-}
-.right {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    width: 200px;
-    background-color: red;
-}
-```
-
-The second:
-
-```css
-.row {
-    display: table;
-    width:100%;
-}
-.left {
-    display: table-cell;
-    background-color: blue;
-    height: 50px;
-}
-.right {
-    display: table-cell;
-    width: 200px;
-    background-color: red;
-}
-```
-[Example of 2 divs side by side](http://codepen.io/artemdemo/pen/vNxvYx)
-
+---
 
 ## Pseudo classes
-
 
 **Q.** You have the following html code:
 
@@ -144,6 +93,61 @@ Without adding new classes change color of elements, when there are exactly five
 
 
 ## Aligning elements
+
+**Q.** You have two `<div>` elements side by side in the row.
+
+```html
+<div class="row">
+    <div class="item"></div>
+    <div class="item"></div>
+</div>
+```
+
+The right one has fixed width of 200px, the left one should take all the rest.
+
+**A.** There is two options.
+
+The first one:
+
+```css
+.row {
+    position: relative;
+}
+.left {
+    margin-right: 200px;
+    background-color: blue;
+    height: 50px;
+}
+.right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    background-color: red;
+}
+```
+
+The second:
+
+```css
+.row {
+    display: table;
+    width:100%;
+}
+.left {
+    display: table-cell;
+    background-color: blue;
+    height: 50px;
+}
+.right {
+    display: table-cell;
+    width: 200px;
+    background-color: red;
+}
+```
+[Example of 2 divs side by side](http://codepen.io/artemdemo/pen/vNxvYx)
+
 
 **Q.** You have following html code. Please align text horizontally in the center and vertically in the middle.
 You have also `item-base` style, that shouldn't be changed.
