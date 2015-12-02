@@ -15,6 +15,8 @@ to know where to start. Then this collection is also for you.
 * [ES2015 questions](https://github.com/artemdemo/frontend-interview-questions/blob/master/es2015-questions.md)
 * [HTML questions](https://github.com/artemdemo/frontend-interview-questions/blob/master/html-questions.md)
 
+Check also following link:<br>
+Awesome interview questions for developers: https://github.com/MaximAbramchuck/awesome-interviews
 
 ## Why I created this list?
 
