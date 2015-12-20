@@ -183,18 +183,54 @@ It's immediately-invoked function expression (IIFE). JavaScript will execute wha
 
 **Q.** Write code, that will provide following behaviour:
 
-```
+```javascript
 add(3)(4) == 7;
 ```
 
 **A.** You should use carrying
 
-```
+```javascript
 function (a) {
     return function (b) {
         return a + b;
     }
 }
+```
+
+---
+
+**Q.** What you will see in the console after executiong the following code?
+
+```javascript
+var foo = 10;
+
+console.log(foo);
+    
+foo();
+    
+function foo(){
+    console.log("foo");
+}
+```
+
+**A.** You will get:
+
+```
+10
+
+Uncaught TypeError: abc is not a function(…)
+```
+
+**Explanation** Named functions will be hoisted along with their body,
+so this is how the code in the question examples is seen by the interpreter:
+
+```javascript
+function abc(){
+  console.log("abc");
+}
+abc = 10;
+console.log(abc);
+abc();
 ```
 
 
