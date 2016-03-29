@@ -117,7 +117,7 @@ and by specification of ECMAScript `NaN` not equal to `NaN`
 
 ---
 
-**Q.** What will be result ofeach of following exprassions? Explain why their are differ:
+**Q.** What will be result of each of following exprassions? Explain why their are differ:
 
 ```javascript
 0 == false
