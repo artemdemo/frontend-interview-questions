@@ -21,7 +21,7 @@ y = x+++x;
 
 **A.** `y = 3`
 
-**Explanation** First will be calculated `x++`, it will return `1` and after the value of `x` will be increased by `1`.
+**Explanation** First will be calculated `x++`, it will return `1` and after that value of `x` will be increased by `1`.
 Therefore at the end we will have `1 + 2`
 
 
