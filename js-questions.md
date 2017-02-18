@@ -27,7 +27,7 @@ Therefore at the end we will have `1 + 2`
 
 ## Types
 
-**Q.** What types javascript has?
+**Q.** What data types javascript has?
 
 **A.** There is 6 types:
 
@@ -39,6 +39,8 @@ boolean
 null
 undefined
 ```
+
+and since ES2015 we have also `symbol`
 
 ---
 
