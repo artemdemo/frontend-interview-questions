@@ -10,11 +10,11 @@ Therefore if you're business owner or senior developer who is looking
 for new specialist you need some sort of list of questions in order
 to know where to start. Then this collection is also for you.
 
-* [CSS questions](https://github.com/artemdemo/frontend-interview-questions/blob/master/css-questions.md)
-* [JS questions](https://github.com/artemdemo/frontend-interview-questions/blob/master/js-questions.md)
-* [ES2015 questions](https://github.com/artemdemo/frontend-interview-questions/blob/master/es2015-questions.md)
-* [HTML questions](https://github.com/artemdemo/frontend-interview-questions/blob/master/html-questions.md)
-* [Your questions to them](./blob/master/your-questions.md)
+* [CSS questions](./css-questions.md)
+* [JS questions](./js-questions.md)
+* [ES2015 questions](./es2015-questions.md)
+* [HTML questions](./html-questions.md)
+* [Your questions to them](./your-questions.md)
 
 Check also following links:<br>
 * Awesome interview questions for developers: https://github.com/MaximAbramchuck/awesome-interviews
