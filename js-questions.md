@@ -4,6 +4,7 @@
 * [Types](https://github.com/artemdemo/frontend-interview-questions/blob/master/js-questions.md#types)
 * [Reference/alias](https://github.com/artemdemo/frontend-interview-questions/blob/master/js-questions.md#referencealias)
 * [Functions](https://github.com/artemdemo/frontend-interview-questions/blob/master/js-questions.md#functions)
+* [Promises](https://github.com/artemdemo/frontend-interview-questions/blob/master/js-questions.md#promises)
 * [URL, data](https://github.com/artemdemo/frontend-interview-questions/blob/master/js-questions.md#url-data)
 
 ---
@@ -238,6 +239,28 @@ abc = 10;
 console.log(abc);
 abc();
 ```
+
+
+## Promises
+
+**Q.** What you will see in console after runnig this code:
+
+```javascript
+Promise.resolve(1)
+    .then((x) => x + 1)
+    .then((x) => { throw new Error('My Error') })
+    .catch(() => 1)
+    .then((x) => x + 1)
+    .then((x) => console.log(x))
+    .catch(console.error)
+```
+
+**A.** You will get:
+
+```
+2
+```
+
 
 
 ## URL, data
