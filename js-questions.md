@@ -76,14 +76,30 @@ foo = Number('20') + 10;
 
 ---
 
+**Q.** You have variable that may or may not be a number.
+Write function `isNumber()` that will return `true` if it is in fact number or `false` otherwise.
+
+```javascript
+function isNumber(value) {
+    if (isNaN(value)) {
+        return false;
+    }
+    return typeof value === 'number';
+}
+```
+
+---
+
+(A more complex version of the previous question.)
+
 **Q.** You have variable that may or may not be a number, but it can be converted to number in the meaningfull way.
 For example string '2' can be converted to number 2, but boolean 'true' can not.
-Write function `isNumber()` that will return `true` if it is in fact number or `false` otherwise.
+Write function `couldBeNumber()` that will return `true` if it is in fact number or `false` otherwise.
 
 **A.**
 
 ```javascript
-function isNumber(value) {
+function couldBeNumber(value) {
     if (typeof value === 'string' && value !== '') {
         return Number(value) === Number(value);
     }
